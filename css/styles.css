@@ -1,0 +1,394 @@
+nav {
+  height: 90px;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 1280px;
+  z-index: 99;
+}
+nav .logo {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: #fff;
+}
+nav .links {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+}
+
+@media all and (max-width: 800px) {
+  #app {
+    max-width: 800px;
+  }
+  nav, footer {
+    max-width: 800px;
+  }
+}
+.about-content {
+  max-width: 1000px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.about-content .top-container {
+  min-height: 200px;
+}
+.about-content .bottom-container {
+  min-height: 200px;
+  background: #8b94e3;
+}
+.about-content .bottom-container .quote {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.about-content .bottom-container .quote .quote-image-holder {
+  width: 260px;
+  height: 150px;
+  margin: auto;
+}
+.about-content .bottom-container .quote .quote-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about-content .bottom-container .quote .quote-text-author {
+  width: 385px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+}
+.about-content .bottom-container .quote .quote-text-author .author {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media all and (max-width: 800px) {
+  .about-content .bottom-container .quote {
+    flex-direction: column;
+    width: 260px;
+    margin: 0 auto 20px auto;
+  }
+  .about-content .bottom-container .quote .quote-text-author {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.booking-form {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 300px;
+}
+.booking-form .title-holder {
+  width: 818px;
+  display: flex;
+  align-items: center;
+}
+.booking-form .top-inputs {
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.booking-form .top-inputs .input-holder {
+  position: relative;
+}
+.booking-form .top-inputs .input-holder .box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  right: 10px;
+  bottom: 9px;
+}
+.booking-form .top-inputs .input-holder input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding-left: 20px;
+}
+.booking-form .top-inputs .input-holder .small {
+  width: 344px;
+}
+.booking-form .top-inputs .input-holder .big {
+  width: 453px;
+}
+.booking-form .checkin-out-inputs {
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.booking-form .checkin-out-inputs .input-holder {
+  position: relative;
+}
+.booking-form .checkin-out-inputs .input-holder .box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 9px;
+}
+.booking-form .checkin-out-inputs .input-holder input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding-left: 20px;
+}
+.booking-form .checkin-out-inputs .input-holder .small {
+  width: 96px;
+}
+.booking-form .checkin-out-inputs .input-holder .big {
+  width: 698px;
+}
+.booking-form .checkin-out-inputs .text-holder {
+  position: relative;
+  width: 96px;
+  height: 58px;
+}
+.booking-form .checkin-out-inputs .text-holder .text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.booking-form .drop-down-inputs {
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.booking-form .drop-down-inputs .input-holder {
+  position: relative;
+}
+.booking-form .drop-down-inputs .input-holder .box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 10px;
+  bottom: 9px;
+}
+.booking-form .drop-down-inputs .input-holder input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding-left: 20px;
+}
+.booking-form .drop-down-inputs .input-holder .small {
+  width: 96px;
+}
+.booking-form .drop-down-inputs .input-holder .big {
+  width: 103px;
+}
+.booking-form .drop-down-inputs .text-holder {
+  position: relative;
+  width: 96px;
+  height: 58px;
+}
+.booking-form .drop-down-inputs .text-holder .text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.booking-form .message-input {
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: red;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.booking-form .message-input .input-holder {
+  position: relative;
+}
+.booking-form .message-input .input-holder .box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  right: 10px;
+  bottom: 9px;
+}
+.booking-form .message-input .input-holder input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding-left: 20px;
+}
+.booking-form .message-input .input-holder .big {
+  width: 818px;
+  height: 231px;
+}
+.booking-form .submit-button {
+  width: 813px;
+  height: 60px;
+  background-color: #79ADDC;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+@media all and (max-width: 800px) {
+  .booking-form {
+    margin-top: 1000px;
+  }
+  .booking-form .title-holder {
+    margin-left: 100px;
+  }
+}
+.hero-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: burlywood;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/08d1d5fa0c105d79ba6adbb3d3ca5ed7.png);
+  background-repeat: no repeat;
+}
+.hero-container .info-holder {
+  color: white;
+  position: absolute;
+  margin-top: 162px;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero-container .info-holder h1 {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero-container .info-holder p {
+  font-size: 20px;
+  padding: 20px;
+}
+.hero-container .info-holder .button-holder {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero-container .info-holder .button-holder .read-more {
+  width: 121px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #79ADDC;
+}
+.hero-container .photo-container {
+  width: 818px;
+  display: flex;
+  gap: 20px;
+  padding-top: 450px;
+  margin-bottom: 300px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.hero-container .photo-container .photo {
+  height: 500px;
+  width: 236px;
+  height: 304px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+@media all and (max-width: 800px) {
+  .hero-container .photo-container {
+    width: 236px;
+    display: flex;
+    gap: 20px;
+    padding-top: 450px;
+    margin-bottom: 300px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  height: 100px;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #79ADDC;
+  padding: 0 20px;
+  width: 1280px;
+}
+footer .logo {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+footer .icons {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer p {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
